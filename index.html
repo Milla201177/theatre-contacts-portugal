@@ -1,0 +1,982 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Театральные контакты в Португалии</title>
+    <style>
+      :root {
+        --bg: #e9f7f8;
+        --bg-soft: rgba(235, 252, 255, 0.78);
+        --card: rgba(250, 254, 255, 0.91);
+        --text: #10282f;
+        --muted: #4f6c73;
+        --line: rgba(15, 102, 120, 0.14);
+        --accent: #12a7bd;
+        --accent-strong: #08788f;
+        --accent-soft: rgba(18, 167, 189, 0.13);
+        --aqua: #7edbe7;
+        --shadow: 0 18px 44px rgba(8, 76, 91, 0.13);
+        --radius-xl: 28px;
+        --radius-lg: 22px;
+        --radius-md: 16px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--text);
+        font-family: "Avenir Next", "Trebuchet MS", sans-serif;
+        background:
+          radial-gradient(circle at top left, rgba(126, 219, 231, 0.35), transparent 32%),
+          radial-gradient(circle at top right, rgba(18, 167, 189, 0.2), transparent 28%),
+          linear-gradient(180deg, #f4fcfd 0%, #e7f7fa 42%, #edf9fb 100%);
+        min-height: 100vh;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background-image:
+          linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+        background-size: 24px 24px;
+        mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), transparent 90%);
+      }
+
+      .shell {
+        width: min(1120px, calc(100vw - 24px));
+        margin: 0 auto;
+        padding: 20px 0 48px;
+      }
+
+      .hero,
+      .panel,
+      .card {
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        background: var(--card);
+        border: 1px solid rgba(255, 255, 255, 0.56);
+        box-shadow: var(--shadow);
+      }
+
+      .hero {
+        position: relative;
+        overflow: hidden;
+        border-radius: 34px;
+        padding: 26px 22px 24px;
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        width: 220px;
+        height: 220px;
+        right: -70px;
+        top: -50px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(126, 219, 231, 0.42), transparent 70%);
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 10px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: var(--bg-soft);
+        color: var(--accent-strong);
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      h1 {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+        font-size: clamp(32px, 7vw, 60px);
+        line-height: 0.96;
+        max-width: 10ch;
+      }
+
+      .hero p {
+        max-width: 700px;
+        margin: 14px 0 0;
+        font-size: 15px;
+        line-height: 1.55;
+        color: var(--muted);
+      }
+
+      .hero-stats {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin-top: 22px;
+      }
+
+      .stat {
+        padding: 14px 16px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.52);
+        border: 1px solid rgba(15, 102, 120, 0.1);
+      }
+
+      .stat strong {
+        display: block;
+        font-size: 26px;
+        font-weight: 800;
+      }
+
+      .stat span {
+        display: block;
+        margin-top: 6px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .panel {
+        margin-top: 16px;
+        border-radius: var(--radius-xl);
+        padding: 16px;
+      }
+
+      .search-row {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .search-box {
+        position: relative;
+      }
+
+      .search-box input {
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 16px 18px 16px 48px;
+        font-size: 16px;
+        color: var(--text);
+        background: rgba(255, 255, 255, 0.92);
+        outline: none;
+      }
+
+      .search-box input:focus {
+        border-color: rgba(8, 120, 143, 0.34);
+        box-shadow: 0 0 0 5px rgba(18, 167, 189, 0.14);
+      }
+
+      .search-box svg {
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 18px;
+        height: 18px;
+        fill: var(--muted);
+      }
+
+      .toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      button,
+      a.link-button {
+        border: 0;
+        cursor: pointer;
+        text-decoration: none;
+        font: inherit;
+      }
+
+      .utility {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        border-radius: 14px;
+        padding: 12px 14px;
+        background: var(--accent);
+        color: white;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .utility.secondary {
+        background: rgba(255, 255, 255, 0.88);
+        color: var(--text);
+        border: 1px solid var(--line);
+      }
+
+      .chip-group {
+        margin-top: 18px;
+      }
+
+      .chip-label {
+        margin: 0 0 10px;
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .chip {
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.78);
+        border: 1px solid var(--line);
+        color: var(--text);
+        font-size: 14px;
+        transition: transform 0.16s ease, background 0.16s ease, border-color 0.16s ease;
+      }
+
+      .chip:hover {
+        transform: translateY(-1px);
+      }
+
+      .chip.active {
+        background: var(--accent-soft);
+        border-color: rgba(8, 120, 143, 0.24);
+        color: var(--accent-strong);
+      }
+
+      .results-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin: 18px 4px 14px;
+      }
+
+      .results-head strong {
+        font-size: 15px;
+      }
+
+      .results-head span {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .grid {
+        display: grid;
+        gap: 14px;
+      }
+
+      .card {
+        border-radius: var(--radius-lg);
+        padding: 18px;
+      }
+
+      .card-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 14px;
+        align-items: start;
+      }
+
+      .card h2 {
+        margin: 0;
+        font-size: 24px;
+        line-height: 1.02;
+        font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+      }
+
+      .subtitle {
+        margin-top: 8px;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .city-badge {
+        flex-shrink: 0;
+        padding: 8px 11px;
+        border-radius: 999px;
+        background: rgba(15, 102, 120, 0.08);
+        font-size: 12px;
+        font-weight: 700;
+        text-align: right;
+        color: var(--muted);
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 14px;
+      }
+
+      .tag {
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.82);
+        border: 1px solid rgba(15, 102, 120, 0.1);
+        padding: 8px 11px;
+        font-size: 13px;
+      }
+
+      .contacts {
+        display: grid;
+        gap: 10px;
+        margin-top: 16px;
+      }
+
+      .contact-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 10px 12px;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.7);
+        border: 1px solid rgba(15, 102, 120, 0.1);
+      }
+
+      .contact-meta small {
+        display: block;
+        color: var(--muted);
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 2px;
+      }
+
+      .contact-meta strong {
+        display: block;
+        font-size: 14px;
+        word-break: break-word;
+      }
+
+      .contact-actions {
+        display: flex;
+        gap: 8px;
+        flex-shrink: 0;
+      }
+
+      .mini-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 70px;
+        padding: 10px 12px;
+        border-radius: 12px;
+        background: white;
+        color: var(--text);
+        border: 1px solid var(--line);
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      .mini-button.primary {
+        background: var(--accent);
+        border-color: transparent;
+        color: white;
+      }
+
+      .empty {
+        padding: 26px 20px;
+        border-radius: var(--radius-lg);
+        background: rgba(255, 255, 255, 0.7);
+        border: 1px dashed rgba(15, 102, 120, 0.18);
+        color: var(--muted);
+        text-align: center;
+        line-height: 1.6;
+      }
+
+      .toast {
+        position: fixed;
+        left: 50%;
+        bottom: 18px;
+        transform: translate(-50%, 18px);
+        opacity: 0;
+        pointer-events: none;
+        padding: 12px 16px;
+        border-radius: 14px;
+        background: rgba(8, 76, 91, 0.94);
+        color: white;
+        font-size: 14px;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+        z-index: 10;
+      }
+
+      .toast.visible {
+        opacity: 1;
+        transform: translate(-50%, 0);
+      }
+
+      @media (min-width: 760px) {
+        .shell {
+          padding-top: 28px;
+        }
+
+        .search-row {
+          grid-template-columns: minmax(0, 1fr) auto auto;
+        }
+
+        .grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 759px) {
+        .hero-stats {
+          grid-template-columns: 1fr;
+        }
+
+        .card-head,
+        .contact-row {
+          flex-direction: column;
+          align-items: start;
+        }
+
+        .contact-actions {
+          width: 100%;
+        }
+
+        .mini-button {
+          flex: 1;
+        }
+
+        .city-badge {
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <section class="hero">
+        <div class="eyebrow">Portugal Theatre Finder</div>
+        <h1>Театральные контакты в Португалии</h1>
+        <p>
+          Поиск по имени, профессии, навыкам, городу и контакту.
+        </p>
+        <div class="hero-stats">
+          <div class="stat">
+            <strong id="artistsCount">0</strong>
+            <span>контактов в базе</span>
+          </div>
+          <div class="stat">
+            <strong id="rolesCount">0</strong>
+            <span>направлений поиска</span>
+          </div>
+          <div class="stat">
+            <strong id="citiesCount">0</strong>
+            <span>городов и регионов</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="search-row">
+          <label class="search-box">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M10.5 3a7.5 7.5 0 1 1 0 15 7.5 7.5 0 0 1 0-15Zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11Zm10.2 14.8-3.5-3.5-1.4 1.4 3.5 3.5a1 1 0 0 0 1.4-1.4Z"
+              />
+            </svg>
+            <input id="searchInput" type="search" placeholder="Например: актриса, звук, режиссёр, Кира, Lisbon" />
+          </label>
+          <button class="utility" id="shareLinkButton" type="button" title="Скопировать ссылку на текущий поиск">
+            Скопировать поиск
+          </button>
+          <button class="utility secondary" id="resetButton" type="button">Сбросить</button>
+        </div>
+
+        <div class="chip-group">
+          <p class="chip-label">Профессии и направления</p>
+          <div class="chips" id="roleChips"></div>
+        </div>
+
+        <div class="chip-group">
+          <p class="chip-label">Города</p>
+          <div class="chips" id="cityChips"></div>
+        </div>
+      </section>
+
+      <div class="results-head">
+        <strong id="resultsTitle">Найдено 0</strong>
+        <span>Можно искать по имени, роли, городу, Telegram, email, телефону и сайту</span>
+      </div>
+
+      <section class="grid" id="results"></section>
+
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script id="artists-data" type="application/json">
+      [
+        {
+          "id": "mila-laskami",
+          "name": "Ласская Людмила (LaskaMi)",
+          "cities": ["Лиссабон"],
+          "roles": ["Актриса", "Танцовщица", "Режиссёрка", "Модель", "Ведущая"],
+          "categories": ["Актёр / актриса", "Танцор / танцовщица", "Режиссура", "Модель", "Ведение"],
+          "about": "Артистка с широким сценическим профилем: театр, движение, ведение и визуальные проекты.",
+          "contacts": [
+            { "label": "Instagram", "value": "@laskamima", "url": "https://www.instagram.com/laskamima", "copy": "@laskamima" },
+            { "label": "Portfolio", "value": "Google Drive", "url": "https://drive.google.com/drive/folders/13vUtZbtcsSqLUjjSEnIx2ldWJT0iJCVe?usp=drive_link" },
+            { "label": "Telegram", "value": "@MLaska", "url": "https://t.me/MLaska", "copy": "@MLaska" }
+          ],
+          "searchTerms": ["мила", "laskami", "laska", "людмила", "ласская", "актриса", "танцовщица", "режиссерка", "режиссёрка", "модель", "ведущая", "lisbon", "лиссабон"]
+        },
+        {
+          "id": "nyura-pashkvich-tichina",
+          "name": "Нюра Пашквич-Тичина",
+          "cities": ["Порту", "Лиссабон", "Визэу"],
+          "roles": ["Артистка театра и кино", "Коуч по голосу", "Музыкант"],
+          "categories": ["Актёр / актриса", "Воркшопы / преподавание", "Музыка / вокал"],
+          "about": "Может быть полезна для сценических и музыкальных проектов, а также для работы с голосом.",
+          "contacts": [
+            { "label": "Instagram", "value": "@justnewta", "url": "https://www.instagram.com/justnewta?igsh=MTY5OGViOGZtcXA2bw==", "copy": "@justnewta" },
+            { "label": "Telegram", "value": "@justnewta", "url": "https://t.me/justnewta", "copy": "@justnewta" }
+          ],
+          "searchTerms": ["нюра", "пашквич", "тичина", "nyura", "justnewta", "артистка", "театр", "кино", "голос", "музыкант", "viseu"]
+        },
+        {
+          "id": "kim",
+          "name": "Ким",
+          "cities": ["Ericeira"],
+          "roles": ["Художник-постановщик", "Декорации", "Пространство для событий"],
+          "categories": ["Сценография / декорации", "Площадка / пространство"],
+          "about": "Свое производство декораций, студия и площадка для концертов, кинопоказов, выставок и других событий.",
+          "contacts": [
+            { "label": "Instagram", "value": "@labartspace", "url": "https://www.instagram.com/labartspace/", "copy": "@labartspace" }
+          ],
+          "searchTerms": ["ким", "kim", "художник постановщик", "декорации", "пространство", "площадка", "ericeira", "эрисейра"]
+        },
+        {
+          "id": "dima-yasnikov",
+          "name": "Дима Ясников",
+          "cities": ["Лиссабон"],
+          "roles": ["Технический директор", "Звукорежиссёр", "Осветитель", "Стейдж-менеджер", "Аренда оборудования", "Студия звукозаписи"],
+          "categories": ["Техника / звук / сцена"],
+          "about": "Закрывает техническую часть событий: звук, свет, сцена, оборудование и студийная запись.",
+          "contacts": [
+            { "label": "Instagram", "value": "@yasenrec", "url": "https://www.instagram.com/yasenrec?igsh=MTBwNG8zdTAyYm9nNw%3D%3D&utm_source=qr", "copy": "@yasenrec" },
+            { "label": "Telegram", "value": "@yasenrec", "url": "https://t.me/yasenrec", "copy": "@yasenrec" }
+          ],
+          "searchTerms": ["дима", "ясников", "dima", "yasnikov", "звук", "свет", "осветитель", "технический директор", "stage manager", "equipment", "лиссабон", "звукозапись"]
+        },
+        {
+          "id": "alex-gribel",
+          "name": "Алекс Грибель",
+          "cities": ["Лиссабон"],
+          "roles": ["Художник-скульптор", "Декоратор", "Бутафор", "Художник-постановщик"],
+          "categories": ["Сценография / декорации"],
+          "about": "Полезен для визуальной части постановок: предметы, бутафория, сценография и художественная сборка.",
+          "contacts": [
+            { "label": "Instagram", "value": "@aleksgribel", "url": "https://www.instagram.com/aleksgribel?igsh=b3EyNHQ0NHF3ZzVi", "copy": "@aleksgribel" },
+            { "label": "Portfolio", "value": "Google Drive", "url": "https://drive.google.com/drive/folders/1FH3LsVAi-inyQK9cMyDQrRJ2f7ImXCr5" },
+            { "label": "Telegram", "value": "@aleksgribel", "url": "https://t.me/aleksgribel", "copy": "@aleksgribel" }
+          ],
+          "searchTerms": ["алекс", "грибель", "gribel", "скульптор", "декоратор", "бутафор", "сценография"]
+        },
+        {
+          "id": "timofey-bushuev",
+          "name": "Тимофей Бушуев",
+          "cities": ["Лиссабон"],
+          "roles": ["Актёр", "Артист мюзикла", "Артист театра кукол", "Режиссёр", "Театральный композитор", "Автор стихов и песен", "Звукорежиссёр", "Преподаватель актёрского мастерства", "Джазовый вокалист", "Строитель", "Реставратор"],
+          "categories": ["Актёр / актриса", "Детский / кукольный театр", "Режиссура", "Музыка / вокал", "Тексты / литература", "Техника / звук / сцена", "Воркшопы / преподавание", "Сценография / декорации"],
+          "about": "Одна из самых широких карточек в базе: сцена, режиссура, музыка для спектаклей, преподавание и даже прикладная помощь с декорациями.",
+          "contacts": [
+            { "label": "Instagram", "value": "@hollucation", "url": "https://www.instagram.com/hollucation?igsh=MWwzZ3M5dW4xcThmNQ==", "copy": "@hollucation" },
+            { "label": "Telegram", "value": "@hollucation", "url": "https://t.me/hollucation", "copy": "@hollucation" },
+            { "label": "Email", "value": "timbushuev@gmail.com", "url": "mailto:timbushuev@gmail.com", "copy": "timbushuev@gmail.com" },
+            { "label": "Телефон", "value": "966704874", "url": "tel:+351966704874", "copy": "+351966704874" }
+          ],
+          "searchTerms": ["тимофей", "бушуев", "timofey", "bushuev", "hollucation", "актер", "актёр", "мюзикл", "театр кукол", "режиссер", "композитор", "вокалист", "звукорежиссер", "строитель", "реставратор", "джаз"]
+        },
+        {
+          "id": "toma-morozova",
+          "name": "Тома Морозова",
+          "cities": ["Лиссабон", "Обидуш"],
+          "roles": ["Актриса", "Танцор", "Каскадёр"],
+          "categories": ["Актёр / актриса", "Танцор / танцовщица", "Каскадёрство"],
+          "about": "Играла в театре, танцевала в коллективах, снималась в кино и работала как каскадёр в проектах.",
+          "contacts": [
+            { "label": "Instagram", "value": "@toma_morozova", "url": "https://www.instagram.com/toma_morozova?igsh=azBoMnM2ZGZmdWtk", "copy": "@toma_morozova" }
+          ],
+          "searchTerms": ["тома", "морозова", "toma", "morozova", "актриса", "танцор", "каскадер", "каскадёр", "obidos"]
+        },
+        {
+          "id": "yaroslav",
+          "name": "Ярослав",
+          "cities": ["Лиссабон"],
+          "roles": ["Продюсер", "Организатор тренингов", "Организатор мастер-классов"],
+          "categories": ["Продюсирование / организация", "Воркшопы / преподавание"],
+          "about": "Подходит для продюсирования образовательных и событийных форматов.",
+          "contacts": [
+            { "label": "Instagram", "value": "@yaroslav.kapustinskiy", "url": "https://www.instagram.com/yaroslav.kapustinskiy/", "copy": "@yaroslav.kapustinskiy" }
+          ],
+          "searchTerms": ["ярослав", "yaroslav", "капустинский", "продюсер", "тренинг", "мастер-класс", "организатор"]
+        },
+        {
+          "id": "nadezhda-kharitonenko",
+          "name": "Надежда Харитоненко",
+          "cities": [],
+          "roles": ["Фотограф", "Актёрское портфолио", "Съёмка мероприятий"],
+          "categories": ["Фотография / портфолио"],
+          "about": "Может быть полезна для создания актёрского портфолио и для съёмки мероприятий или мастер-классов.",
+          "contacts": [
+            { "label": "Instagram", "value": "@onenadya", "url": "http://instagram.com/onenadya", "copy": "@onenadya" },
+            { "label": "Сайт", "value": "onenadya.com", "url": "http://onenadya.com", "copy": "onenadya.com" }
+          ],
+          "searchTerms": ["надежда", "харитоненко", "nadya", "onenadya", "фотограф", "портфолио", "съемка", "съёмка", "мероприятия"]
+        },
+        {
+          "id": "kira-belyaeva",
+          "name": "Кира Беляева",
+          "cities": [],
+          "roles": ["Актриса музыкального театра", "Гид по закулисью", "Менеджер театральных проектов"],
+          "categories": ["Актёр / актриса", "Музыка / вокал", "Продюсирование / организация"],
+          "about": "Полезна для музыкального театра, продюсерской координации и театральных проектов.",
+          "contacts": [
+            { "label": "Telegram", "value": "@Kira_Money_W", "url": "http://t.me/Kira_Money_W", "copy": "@Kira_Money_W" }
+          ],
+          "searchTerms": ["кира", "беляева", "kira", "belyaeva", "музыкальный театр", "менеджер", "закулисье", "kira_money_w"]
+        },
+        {
+          "id": "natalia-pavlova-klyus",
+          "name": "Наталья Павлова-Клюс",
+          "cities": ["Португалия"],
+          "roles": ["Актриса", "Модель", "Писатель", "Поэтесса", "Режиссёр"],
+          "categories": ["Актёр / актриса", "Модель", "Тексты / литература", "Режиссура"],
+          "about": "Сильная мультидисциплинарная карточка для сценических и литературных коллабораций.",
+          "contacts": [
+            { "label": "Instagram", "value": "@art.neve_", "url": "https://instagram.com/art.neve_", "copy": "@art.neve_" }
+          ],
+          "searchTerms": ["наталья", "павлова", "клюс", "natalia", "актриса", "модель", "писатель", "поэтесса", "режиссер", "art.neve"]
+        },
+        {
+          "id": "polina-polly",
+          "name": "Полина / Полли",
+          "cities": ["Португалия"],
+          "roles": ["Актриса", "Импровизаторка", "Танцовщица", "Клоунесса", "Ведущая", "Стрит-артистка", "Певица"],
+          "categories": ["Актёр / актриса", "Перформанс / импровизация", "Танцор / танцовщица", "Клоунада", "Ведение", "Музыка / вокал"],
+          "about": "Подходит для живых, игровых и уличных форматов: импровизация, клоунада, танец, вокал и ведение.",
+          "contacts": [
+            { "label": "Instagram", "value": "@yapolly9", "url": "https://www.instagram.com/yapolly9?igsh=azkwZGUxMnBkbmY5&utm_source=qr", "copy": "@yapolly9" }
+          ],
+          "searchTerms": ["полина", "полли", "polina", "polly", "импровизация", "клоунесса", "танцовщица", "ведущая", "пою", "певица", "street artist"]
+        },
+        {
+          "id": "natasha-klyuzheva",
+          "name": "Наташа Клюжева",
+          "cities": ["Кашкайш", "Лиссабон"],
+          "roles": ["Актриса", "Перформерка", "Танцхудожница"],
+          "categories": ["Актёр / актриса", "Перформанс / импровизация", "Танцор / танцовщица"],
+          "about": "Работает на стыке театра, перформанса и движения. Портфолио и CV по запросу.",
+          "contacts": [
+            { "label": "Instagram", "value": "@tetya_klu", "url": "https://www.instagram.com/tetya_klu/", "copy": "@tetya_klu" }
+          ],
+          "searchTerms": ["наташа", "клюжева", "natasha", "klyuzheva", "перформерка", "танцхудожница", "кашкайш", "cascais"]
+        },
+        {
+          "id": "ali",
+          "name": "Али",
+          "cities": [],
+          "roles": ["Артист", "Певец", "Танцор"],
+          "categories": ["Актёр / актриса", "Музыка / вокал", "Танцор / танцовщица"],
+          "about": "Карточка для сценических выступлений, музыки и движения.",
+          "contacts": [
+            { "label": "Instagram", "value": "@mirprekrasen", "url": "https://www.instagram.com/mirprekrasen", "copy": "@mirprekrasen" }
+          ],
+          "searchTerms": ["али", "ali", "артист", "певец", "танцор", "mirprekrasen"]
+        },
+        {
+          "id": "alyona-kuzmina",
+          "name": "Алёна Кузьмина",
+          "cities": ["Лиссабон"],
+          "roles": ["Организатор театральных воркшопов", "Организатор клоунских воркшопов", "Организатор спектаклей"],
+          "categories": ["Продюсирование / организация", "Воркшопы / преподавание", "Клоунада"],
+          "about": "Организует театральные и клоунские воркшопы и спектакли; удобно связываться через Telegram или WhatsApp.",
+          "contacts": [
+            { "label": "Instagram", "value": "@lisbon_playground", "url": "https://www.instagram.com/lisbon_playground/", "copy": "@lisbon_playground" },
+            { "label": "Telegram", "value": "@kuzalena", "url": "https://t.me/kuzalena", "copy": "@kuzalena" },
+            { "label": "WhatsApp", "value": "+351 937 990 470", "url": "https://wa.me/351937990470", "copy": "+351937990470" }
+          ],
+          "searchTerms": ["алёна", "алена", "кузьмина", "alyona", "kuzmina", "воркшоп", "клоун", "спектакль", "организатор", "whatsapp"]
+        },
+        {
+          "id": "anna-soldatkina",
+          "name": "Анна Солдаткина",
+          "cities": ["Лиссабон"],
+          "roles": ["Актриса театра", "Детские спектакли"],
+          "categories": ["Актёр / актриса", "Детский / кукольный театр"],
+          "about": "Придумывает и играет детские спектакли в театре «Тут и Там».",
+          "contacts": [
+            { "label": "Instagram", "value": "@anna_soldatkina_", "url": "https://www.instagram.com/anna_soldatkina_?igsh=MTU1cjlidnRrYjZidw==", "copy": "@anna_soldatkina_" },
+            { "label": "Театр", "value": "@tutitam.theater", "url": "https://www.instagram.com/tutitam.theater?igsh=MXNtOXN4MmVvNWVlbA==", "copy": "@tutitam.theater" }
+          ],
+          "searchTerms": ["анна", "солдаткина", "anna", "soldatkina", "детские спектакли", "тут и там", "tutitam"]
+        }
+      ]
+    </script>
+    <script>
+      const data = JSON.parse(document.getElementById("artists-data").textContent);
+      const searchInput = document.getElementById("searchInput");
+      const resultsNode = document.getElementById("results");
+      const resultsTitle = document.getElementById("resultsTitle");
+      const roleChips = document.getElementById("roleChips");
+      const cityChips = document.getElementById("cityChips");
+      const toast = document.getElementById("toast");
+      const shareLinkButton = document.getElementById("shareLinkButton");
+      const resetButton = document.getElementById("resetButton");
+
+      const state = {
+        query: "",
+        role: "",
+        city: ""
+      };
+
+      const roleAliases = {
+        "Бутафория / реквизит": "Сценография / декорации",
+        "Детский театр": "Детский / кукольный театр",
+        "Звук / запись": "Техника / звук / сцена",
+        "Менеджмент / закулисье": "Продюсирование / организация",
+        "Музыкальный театр": "Музыка / вокал",
+        "Стрит-арт": "Перформанс / импровизация",
+        "Строительство / реставрация": "Сценография / декорации",
+        "Техника / сцена": "Техника / звук / сцена",
+        "Театр кукол": "Детский / кукольный театр"
+      };
+
+      const normalize = (value) =>
+        (value || "")
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .replace(/ё/g, "е")
+          .replace(/й/g, "и")
+          .replace(/[^a-zа-я0-9+@.\s-]/gi, " ")
+          .replace(/\s+/g, " ")
+          .trim();
+
+      const uniqueSorted = (list) => [...new Set(list.filter(Boolean))].sort((a, b) => a.localeCompare(b, "ru"));
+
+      const getCategories = (item) => item.categories || item.roles;
+      const getAliasTerms = (item) =>
+        Object.entries(roleAliases)
+          .filter(([, category]) => getCategories(item).includes(category))
+          .map(([alias]) => alias);
+
+      const allRoles = uniqueSorted(data.flatMap((item) => getCategories(item)));
+      const allCities = uniqueSorted(data.flatMap((item) => item.cities));
+
+      document.getElementById("artistsCount").textContent = String(data.length);
+      document.getElementById("rolesCount").textContent = String(allRoles.length);
+      document.getElementById("citiesCount").textContent = String(allCities.length);
+
+      function showToast(message) {
+        toast.textContent = message;
+        toast.classList.add("visible");
+        clearTimeout(showToast.timer);
+        showToast.timer = setTimeout(() => toast.classList.remove("visible"), 1800);
+      }
+
+      async function copyText(value) {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(value);
+          return true;
+        }
+
+        const area = document.createElement("textarea");
+        area.value = value;
+        area.setAttribute("readonly", "");
+        area.style.position = "fixed";
+        area.style.opacity = "0";
+        document.body.appendChild(area);
+        area.select();
+        const success = document.execCommand("copy");
+        document.body.removeChild(area);
+        return success;
+      }
+
+      function updateUrl() {
+        const params = new URLSearchParams();
+        if (state.query) params.set("q", state.query);
+        if (state.role) params.set("role", state.role);
+        if (state.city) params.set("city", state.city);
+        const next = `${location.pathname}${params.toString() ? `?${params}` : ""}`;
+        history.replaceState({}, "", next);
+      }
+
+      function readUrlState() {
+        const params = new URLSearchParams(location.search);
+        state.query = params.get("q") || "";
+        state.role = roleAliases[params.get("role")] || params.get("role") || "";
+        state.city = params.get("city") || "";
+        searchInput.value = state.query;
+      }
+
+      function createChip(label, value, group) {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = `chip${state[group] === value ? " active" : ""}`;
+        button.textContent = label;
+        button.addEventListener("click", () => {
+          state[group] = state[group] === value ? "" : value;
+          render();
+        });
+        return button;
+      }
+
+      function renderChips() {
+        roleChips.innerHTML = "";
+        cityChips.innerHTML = "";
+
+        roleChips.appendChild(createChip("Все", "", "role"));
+        allRoles.forEach((role) => roleChips.appendChild(createChip(role, role, "role")));
+
+        cityChips.appendChild(createChip("Все", "", "city"));
+        allCities.forEach((city) => cityChips.appendChild(createChip(city, city, "city")));
+      }
+
+      function matches(item) {
+        const query = normalize(state.query);
+        const exactCityQuery = allCities.some((city) => normalize(city) === query);
+        const haystack = normalize(
+          [
+            item.name,
+            item.about,
+            item.roles.join(" "),
+            getCategories(item).join(" "),
+            getAliasTerms(item).join(" "),
+            item.cities.join(" "),
+            (item.searchTerms || []).join(" "),
+            item.contacts.map((contact) => `${contact.label} ${contact.value}`).join(" ")
+          ].join(" ")
+        );
+
+        const queryOk =
+          !query ||
+          (exactCityQuery
+            ? item.cities.some((city) => normalize(city) === query)
+            : query.split(" ").every((part) => haystack.includes(part)));
+        const roleOk = !state.role || getCategories(item).includes(state.role) || item.roles.includes(state.role);
+        const cityOk = !state.city || item.cities.includes(state.city);
+        return queryOk && roleOk && cityOk;
+      }
+
+      function buildContact(contact) {
+        const row = document.createElement("div");
+        row.className = "contact-row";
+
+        const meta = document.createElement("div");
+        meta.className = "contact-meta";
+        meta.innerHTML = `<small>${contact.label}</small><strong>${contact.value}</strong>`;
+
+        const actions = document.createElement("div");
+        actions.className = "contact-actions";
+
+        if (contact.copy) {
+          const copy = document.createElement("button");
+          copy.type = "button";
+          copy.className = "mini-button";
+          copy.textContent = "Скопировать";
+          copy.addEventListener("click", async () => {
+            const success = await copyText(contact.copy);
+            showToast(success ? `${contact.label} скопирован` : "Не удалось скопировать");
+          });
+          actions.appendChild(copy);
+        }
+
+        if (contact.url) {
+          const open = document.createElement("a");
+          open.className = "mini-button primary";
+          open.textContent = "Открыть";
+          open.href = contact.url;
+          open.target = "_blank";
+          open.rel = "noreferrer";
+          actions.appendChild(open);
+        }
+
+        row.append(meta, actions);
+        return row;
+      }
+
+      function renderCards(items) {
+        resultsNode.innerHTML = "";
+
+        if (!items.length) {
+          const empty = document.createElement("div");
+          empty.className = "empty";
+          empty.textContent = "Ничего не нашлось. Попробуйте убрать часть запроса или сбросить фильтры.";
+          resultsNode.appendChild(empty);
+          return;
+        }
+
+        items.forEach((item) => {
+          const article = document.createElement("article");
+          article.className = "card";
+
+          const cities = item.cities.length ? item.cities.join(" · ") : "Город не указан";
+          const subtitle = item.about || item.roles.join(", ");
+
+          article.innerHTML = `
+            <div class="card-head">
+              <div>
+                <h2>${item.name}</h2>
+                <div class="subtitle">${subtitle}</div>
+              </div>
+              <div class="city-badge">${cities}</div>
+            </div>
+            <div class="tags">${item.roles.map((role) => `<span class="tag">${role}</span>`).join("")}</div>
+            <div class="contacts"></div>
+          `;
+
+          const contactsNode = article.querySelector(".contacts");
+          item.contacts.forEach((contact) => contactsNode.appendChild(buildContact(contact)));
+          resultsNode.appendChild(article);
+        });
+      }
+
+      function render() {
+        updateUrl();
+        renderChips();
+        const items = data.filter(matches);
+        resultsTitle.textContent = `Найдено ${items.length}`;
+        renderCards(items);
+      }
+
+      shareLinkButton.addEventListener("click", async () => {
+        const success = await copyText(location.href);
+        showToast(success ? "Ссылка на текущий поиск скопирована" : "Не удалось скопировать ссылку");
+      });
+
+      resetButton.addEventListener("click", () => {
+        state.query = "";
+        state.role = "";
+        state.city = "";
+        searchInput.value = "";
+        render();
+      });
+
+      searchInput.addEventListener("input", (event) => {
+        state.query = event.target.value;
+        render();
+      });
+
+      readUrlState();
+      render();
+    </script>
+  </body>
+</html>

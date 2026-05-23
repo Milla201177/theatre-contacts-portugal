@@ -1,0 +1,176 @@
+[
+  {
+    "id": "mila-laskami",
+    "name": "Ласская Людмила (LaskaMi)",
+    "cities": ["Лиссабон"],
+    "roles": ["Актриса", "Танцовщица", "Режиссёрка", "Модель", "Ведущая"],
+    "categories": ["Актёр / актриса", "Танцор / танцовщица", "Режиссура", "Модель", "Ведение"],
+    "about": "Артистка с широким сценическим профилем: театр, движение, ведение и визуальные проекты.",
+    "contacts": [
+      { "label": "Instagram", "value": "@laskamima", "url": "https://www.instagram.com/laskamima" },
+      { "label": "Portfolio", "value": "Google Drive", "url": "https://drive.google.com/drive/folders/13vUtZbtcsSqLUjjSEnIx2ldWJT0iJCVe?usp=drive_link" },
+      { "label": "Telegram", "value": "@MLaska", "url": "https://t.me/MLaska" }
+    ],
+    "searchTerms": ["мила", "laskami", "laska", "людмила", "ласская", "актриса", "танцовщица", "режиссерка", "режиссёрка", "модель", "ведущая", "lisbon", "лиссабон"]
+  },
+  {
+    "id": "nyura-pashkvich-tichina",
+    "name": "Нюра Пашквич-Тичина",
+    "cities": ["Порту", "Лиссабон", "Визэу"],
+    "roles": ["Артистка театра и кино", "Коуч по голосу", "Музыкант"],
+    "categories": ["Актёр / актриса", "Воркшопы / преподавание", "Музыка / вокал"],
+    "about": "Может быть полезна для сценических и музыкальных проектов, а также для работы с голосом.",
+    "contacts": [
+      { "label": "Instagram", "value": "@justnewta", "url": "https://www.instagram.com/justnewta?igsh=MTY5OGViOGZtcXA2bw==" },
+      { "label": "Telegram", "value": "@justnewta", "url": "https://t.me/justnewta" }
+    ]
+  },
+  {
+    "id": "kim",
+    "name": "Ким",
+    "cities": ["Ericeira"],
+    "roles": ["Художник-постановщик", "Декорации", "Пространство для событий"],
+    "categories": ["Сценография / декорации", "Площадка / пространство"],
+    "about": "Свое производство декораций, студия и площадка для концертов, кинопоказов, выставок и других событий.",
+    "contacts": [{ "label": "Instagram", "value": "@labartspace", "url": "https://www.instagram.com/labartspace/" }]
+  },
+  {
+    "id": "dima-yasnikov",
+    "name": "Дима Ясников",
+    "cities": ["Лиссабон"],
+    "roles": ["Технический директор", "Звукорежиссёр", "Осветитель", "Стейдж-менеджер", "Аренда оборудования", "Студия звукозаписи"],
+    "categories": ["Техника / звук / сцена"],
+    "about": "Закрывает техническую часть событий: звук, свет, сцена, оборудование и студийная запись.",
+    "contacts": [
+      { "label": "Instagram", "value": "@yasenrec", "url": "https://www.instagram.com/yasenrec?igsh=MTBwNG8zdTAyYm9nNw%3D%3D&utm_source=qr" },
+      { "label": "Telegram", "value": "@yasenrec", "url": "https://t.me/yasenrec" }
+    ]
+  },
+  {
+    "id": "alex-gribel",
+    "name": "Алекс Грибель",
+    "cities": ["Лиссабон"],
+    "roles": ["Художник-скульптор", "Декоратор", "Бутафор", "Художник-постановщик"],
+    "categories": ["Сценография / декорации"],
+    "about": "Полезен для визуальной части постановок: предметы, бутафория, сценография и художественная сборка.",
+    "contacts": [
+      { "label": "Instagram", "value": "@aleksgribel", "url": "https://www.instagram.com/aleksgribel?igsh=b3EyNHQ0NHF3ZzVi" },
+      { "label": "Portfolio", "value": "Google Drive", "url": "https://drive.google.com/drive/folders/1FH3LsVAi-inyQK9cMyDQrRJ2f7ImXCr5" },
+      { "label": "Telegram", "value": "@aleksgribel", "url": "https://t.me/aleksgribel" }
+    ]
+  },
+  {
+    "id": "timofey-bushuev",
+    "name": "Тимофей Бушуев",
+    "cities": ["Лиссабон"],
+    "roles": ["Актёр", "Артист мюзикла", "Артист театра кукол", "Режиссёр", "Театральный композитор", "Автор стихов и песен", "Звукорежиссёр", "Преподаватель актёрского мастерства", "Джазовый вокалист", "Строитель", "Реставратор"],
+    "categories": ["Актёр / актриса", "Детский / кукольный театр", "Режиссура", "Музыка / вокал", "Тексты / литература", "Техника / звук / сцена", "Воркшопы / преподавание", "Сценография / декорации"],
+    "about": "Одна из самых широких карточек в базе: сцена, режиссура, музыка для спектаклей, преподавание и даже прикладная помощь с декорациями.",
+    "contacts": [
+      { "label": "Instagram", "value": "@hollucation", "url": "https://www.instagram.com/hollucation?igsh=MWwzZ3M5dW4xcThmNQ==" },
+      { "label": "Telegram", "value": "@hollucation", "url": "https://t.me/hollucation" },
+      { "label": "Email", "value": "timbushuev@gmail.com", "url": "mailto:timbushuev@gmail.com" },
+      { "label": "Телефон", "value": "966704874", "url": "tel:+351966704874" }
+    ]
+  },
+  {
+    "id": "toma-morozova",
+    "name": "Тома Морозова",
+    "cities": ["Лиссабон", "Обидуш"],
+    "roles": ["Актриса", "Танцор", "Каскадёр"],
+    "categories": ["Актёр / актриса", "Танцор / танцовщица", "Каскадёрство"],
+    "about": "Играла в театре, танцевала в коллективах, снималась в кино и работала как каскадёр в проектах.",
+    "contacts": [{ "label": "Instagram", "value": "@toma_morozova", "url": "https://www.instagram.com/toma_morozova?igsh=azBoMnM2ZGZmdWtk" }]
+  },
+  {
+    "id": "yaroslav",
+    "name": "Ярослав",
+    "cities": ["Лиссабон"],
+    "roles": ["Продюсер", "Организатор тренингов", "Организатор мастер-классов"],
+    "categories": ["Продюсирование / организация", "Воркшопы / преподавание"],
+    "about": "Подходит для продюсирования образовательных и событийных форматов.",
+    "contacts": [{ "label": "Instagram", "value": "@yaroslav.kapustinskiy", "url": "https://www.instagram.com/yaroslav.kapustinskiy/" }]
+  },
+  {
+    "id": "nadezhda-kharitonenko",
+    "name": "Надежда Харитоненко",
+    "cities": [],
+    "roles": ["Фотограф", "Актёрское портфолио", "Съёмка мероприятий"],
+    "categories": ["Фотография / портфолио"],
+    "about": "Может быть полезна для создания актёрского портфолио и для съёмки мероприятий или мастер-классов.",
+    "contacts": [
+      { "label": "Instagram", "value": "@onenadya", "url": "http://instagram.com/onenadya" },
+      { "label": "Сайт", "value": "onenadya.com", "url": "http://onenadya.com" }
+    ]
+  },
+  {
+    "id": "kira-belyaeva",
+    "name": "Кира Беляева",
+    "cities": [],
+    "roles": ["Актриса музыкального театра", "Гид по закулисью", "Менеджер театральных проектов"],
+    "categories": ["Актёр / актриса", "Музыка / вокал", "Продюсирование / организация"],
+    "about": "Полезна для музыкального театра, продюсерской координации и театральных проектов.",
+    "contacts": [{ "label": "Telegram", "value": "@Kira_Money_W", "url": "http://t.me/Kira_Money_W" }]
+  },
+  {
+    "id": "natalia-pavlova-klyus",
+    "name": "Наталья Павлова-Клюс",
+    "cities": ["Португалия"],
+    "roles": ["Актриса", "Модель", "Писатель", "Поэтесса", "Режиссёр"],
+    "categories": ["Актёр / актриса", "Модель", "Тексты / литература", "Режиссура"],
+    "about": "Сильная мультидисциплинарная карточка для сценических и литературных коллабораций.",
+    "contacts": [{ "label": "Instagram", "value": "@art.neve_", "url": "https://instagram.com/art.neve_" }]
+  },
+  {
+    "id": "polina-polly",
+    "name": "Полина / Полли",
+    "cities": ["Португалия"],
+    "roles": ["Актриса", "Импровизаторка", "Танцовщица", "Клоунесса", "Ведущая", "Стрит-артистка", "Певица"],
+    "categories": ["Актёр / актриса", "Перформанс / импровизация", "Танцор / танцовщица", "Клоунада", "Ведение", "Музыка / вокал"],
+    "about": "Подходит для живых, игровых и уличных форматов: импровизация, клоунада, танец, вокал и ведение.",
+    "contacts": [{ "label": "Instagram", "value": "@yapolly9", "url": "https://www.instagram.com/yapolly9?igsh=azkwZGUxMnBkbmY5&utm_source=qr" }]
+  },
+  {
+    "id": "natasha-klyuzheva",
+    "name": "Наташа Клюжева",
+    "cities": ["Кашкайш", "Лиссабон"],
+    "roles": ["Актриса", "Перформерка", "Танцхудожница"],
+    "categories": ["Актёр / актриса", "Перформанс / импровизация", "Танцор / танцовщица"],
+    "about": "Работает на стыке театра, перформанса и движения. Портфолио и CV по запросу.",
+    "contacts": [{ "label": "Instagram", "value": "@tetya_klu", "url": "https://www.instagram.com/tetya_klu/" }]
+  },
+  {
+    "id": "ali",
+    "name": "Али",
+    "cities": [],
+    "roles": ["Артист", "Певец", "Танцор"],
+    "categories": ["Актёр / актриса", "Музыка / вокал", "Танцор / танцовщица"],
+    "about": "Карточка для сценических выступлений, музыки и движения.",
+    "contacts": [{ "label": "Instagram", "value": "@mirprekrasen", "url": "https://www.instagram.com/mirprekrasen" }]
+  },
+  {
+    "id": "alyona-kuzmina",
+    "name": "Алёна Кузьмина",
+    "cities": ["Лиссабон"],
+    "roles": ["Организатор театральных воркшопов", "Организатор клоунских воркшопов", "Организатор спектаклей"],
+    "categories": ["Продюсирование / организация", "Воркшопы / преподавание", "Клоунада"],
+    "about": "Организует театральные и клоунские воркшопы и спектакли; удобно связываться через Telegram или WhatsApp.",
+    "contacts": [
+      { "label": "Instagram", "value": "@lisbon_playground", "url": "https://www.instagram.com/lisbon_playground/" },
+      { "label": "Telegram", "value": "@kuzalena", "url": "https://t.me/kuzalena" },
+      { "label": "WhatsApp", "value": "+351 937 990 470", "url": "https://wa.me/351937990470" }
+    ]
+  },
+  {
+    "id": "anna-soldatkina",
+    "name": "Анна Солдаткина",
+    "cities": ["Лиссабон"],
+    "roles": ["Актриса театра", "Детские спектакли"],
+    "categories": ["Актёр / актриса", "Детский / кукольный театр"],
+    "about": "Придумывает и играет детские спектакли в театре «Тут и Там».",
+    "contacts": [
+      { "label": "Instagram", "value": "@anna_soldatkina_", "url": "https://www.instagram.com/anna_soldatkina_?igsh=MTU1cjlidnRrYjZidw==" },
+      { "label": "Театр", "value": "@tutitam.theater", "url": "https://www.instagram.com/tutitam.theater?igsh=MXNtOXN4MmVvNWVlbA==" }
+    ]
+  }
+]
