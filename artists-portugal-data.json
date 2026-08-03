@@ -175,16 +175,16 @@
   },
   {
     "id": "eric-2003",
-    "name": "Эрик / @Eric_2003",
-    "cities": ["Luz", "Algarve"],
+    "name": "Эрик",
+    "cities": ["Луз", "Алгарве"],
     "roles": ["Актёр", "Сценарист", "Креативщик", "Монтаж"],
     "categories": ["Актёр / актриса", "Тексты / литература", "Креатив / концепции", "Видео / монтаж"],
     "about": "Может быть полезен для актёрских задач, сценариев, креативных концепций и монтажа.",
     "contacts": [
       { "label": "Telegram", "value": "@Eric_2003", "url": "https://t.me/Eric_2003" },
-      { "label": "Facebook", "value": "Facebook", "url": "https://www.facebook.com/share/1DPgsZj66X/" },
+      { "label": "Facebook", "value": "ernesto.cuba.73", "url": "https://www.facebook.com/share/1DPgsZj66X/" },
       { "label": "Email", "value": "Gonsales.ernesto@gmail.com", "url": "mailto:Gonsales.ernesto@gmail.com" }
     ],
-    "searchTerms": ["эрик", "eric", "eric_2003", "gonsales", "ernesto", "актер", "актёр", "сценарист", "креатив", "креативщик", "монтаж", "видео", "luz", "algarve", "луз", "алгарве"]
+    "searchTerms": ["эрик", "eric", "eric_2003", "gonsales", "ernesto", "ernesto.cuba.73", "актер", "актёр", "сценарист", "креатив", "креативщик", "монтаж", "видео", "luz", "algarve", "луз", "алгарве"]
   }
 ]
