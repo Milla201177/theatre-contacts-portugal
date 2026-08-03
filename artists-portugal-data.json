@@ -28,11 +28,12 @@
   {
     "id": "kim",
     "name": "Ким",
-    "cities": ["Ericeira"],
+    "cities": ["Эрисейра"],
     "roles": ["Художник-постановщик", "Декорации", "Пространство для событий"],
     "categories": ["Сценография / декорации", "Площадка / пространство"],
     "about": "Свое производство декораций, студия и площадка для концертов, кинопоказов, выставок и других событий.",
-    "contacts": [{ "label": "Instagram", "value": "@labartspace", "url": "https://www.instagram.com/labartspace/" }]
+    "contacts": [{ "label": "Instagram", "value": "@labartspace", "url": "https://www.instagram.com/labartspace/" }],
+    "searchTerms": ["ким", "kim", "художник постановщик", "декорации", "пространство", "площадка", "ericeira", "эрисейра"]
   },
   {
     "id": "dima-yasnikov",
